@@ -1,3 +1,7 @@
+## **CCEO´s conventions**
+
+* File names must be named in English
+
 ## **PSR standars**
 
 * Lines SHOULD be 80 characters or less.
