@@ -1,8 +1,43 @@
-### **Follow Laravel naming conventions**
+## **Laravel naming conventions**
 
- Follow [PSR standards](http://www.php-fig.org/psr/psr-2/).
- 
- Also, follow naming conventions accepted by Laravel community:
+* Lines SHOULD be 80 characters or less.
+* There MUST be one blank line after the `namespace` declaration, and there MUST be one blank line after the block of `use` declarations.
+* Opening braces for classes MUST go on the next line, and closing braces MUST go on the next line after the body.
+* Opening braces for methods MUST go on the next line, and closing braces MUST go on the next line after the body.
+* Visibility MUST be declared on all properties and methods; `abstract` and `final` MUST be declared before the visibility; `static` MUST be declared after the visibility.
+* Control structure keywords MUST have one space after them; method and function calls MUST NOT.
+* Opening braces for control structures MUST go on the same line, and closing braces MUST go on the next line after the body.
+* Opening parentheses for control structures MUST NOT have a space after them, and closing parentheses for control structures MUST NOT have a space before.
+
+#### This example encompasses some of the rules below as a quick overview:
+
+```php
+<?php
+namespace Vendor\Package;
+
+use FooInterface;
+use BarClass as Bar;
+use OtherVendor\OtherPackage\BazClass;
+
+class Foo extends Bar implements FooInterface
+{
+    public function sampleMethod($a, $b = null)
+    {
+        if ($a === $b) {
+            bar();
+        } elseif ($a > $b) {
+            $foo->bar($arg1);
+        } else {
+            BazClass::bar($arg2, $arg3);
+        }
+    }
+
+    final public static function bar()
+    {
+        // method body
+    }
+}
+```
 
 What | How | Good | Bad
 ------------ | ------------- | ------------- | -------------
