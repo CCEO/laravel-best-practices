@@ -1,4 +1,4 @@
-## **Laravel naming conventions**
+## **PSR standars**
 
 * Lines SHOULD be 80 characters or less.
 * There MUST be one blank line after the `namespace` declaration, and there MUST be one blank line after the block of `use` declarations.
@@ -38,6 +38,8 @@ class Foo extends Bar implements FooInterface
     }
 }
 ```
+
+## **Laravel naming conventions**
 
 What | How | Good | Bad
 ------------ | ------------- | ------------- | -------------
